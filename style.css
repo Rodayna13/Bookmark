@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+::selection {
+  background-color: #ff5a6891;
+  color: #373449;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #ffe7e86c;
+}
+
+main h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #373449;
+  isolation: isolate;
+}
+
+main h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #FF5A67;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+main h1:hover::before {
+  height: 50%;
+}
+
+.bookmark-body {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #373449;
+}
+
+.bookmark-body h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #FF5A67, #373449);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+  color: #373449;
+  background-color: #fff;
+  border-color: #FF5A67;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #FF5A67;
+  --bs-btn-border-color: #FF5A67;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #FF5A67;
+  --bs-btn-hover-border-color: #FF5A67;
+}
+
+.btn-submit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #FF5A67;
+  --bs-btn-border-color: #FF5A67;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #FF5A67;
+  --bs-btn-hover-border-color: #FF5A67;
+}
+
+.btn-visit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #373449;
+  --bs-btn-border-color: #373449;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #373449;
+  --bs-btn-hover-border-color: #373449;
+}
+
+table {
+  vertical-align: middle !important;
+}
+
+.box-info {
+  background-color: #0007;
+}
+
+.box-conent {
+  width: 500px;
+  z-index: 10;
+}
+
+.box-conent p {
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #373449;
+}
+
+.rules li {
+  font-size: 18px;
+  padding-top: 10px;
+}
+.rules i {
+  color: #FF5A67;
+}
+
+.circles span {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.circles span:nth-child(1) {
+  background-color: #FF5A67;
+}
+.circles span:nth-child(2) {
+  background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+  background-color: #4db748;
+}
+
+.logo {
+  width: 40px;
+}
